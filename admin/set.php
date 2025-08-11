@@ -128,15 +128,15 @@ if($mod=='site'){
 	  <label class="col-sm-2 control-label">用户中心风格</label>
 	  <div class="col-sm-10"><select class="form-control" name="user_style" default="<?php echo $conf['user_style']?>"><option value="0">黑色（1）</option><option value="1">黑色（2）</option><option value="2">棕色（1）</option><option value="3">棕色（2）</option><option value="4">蓝色（1）</option><option value="5">蓝色（2）</option><option value="6">紫色（1）</option><option value="7">紫色（2）</option></select></div>
 	</div><br/>
-	<div class="form-group">
-	  <label class="col-sm-2 control-label">公共静态资源CDN</label>
-	  <div class="col-sm-10"><select class="form-control" name="cdnpublic" default="<?php echo $conf['cdnpublic']?>">
-	  <option value="4">字节跳动CDN</option>
-	  <option value="0">南方科大CDN</option>
-	  <option value="2">ZstaticCDN</option>
-	  <option value="1">360CDN</option>
-	  </select></div>
-	</div><br/>
+    <div class="form-group">
+      <label class="col-sm-2 control-label">公共静态资源CDN</label>
+      <div class="col-sm-10"><select class="form-control" name="cdnpublic" default="<?php echo $conf['cdnpublic']?>">
+      <option value="4">Baomitu CDN</option>
+      <option value="0">UNPKG CDN</option>
+      <option value="2">Zstatic CDN</option>
+      <option value="1">Cloudflare CDNJS</option>
+      </select></div>
+    </div><br/>
 	<div class="form-group">
 	  <label class="col-sm-2 control-label">首页显示模式</label>
 	  <div class="col-sm-10"><select class="form-control" name="homepage" default="<?php echo $conf['homepage']?>"><option value="0">默认显示首页</option><option value="1">直接跳转登录页面</option><option value="2">显示其它指定网址</option></select></div>

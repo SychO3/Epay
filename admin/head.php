@@ -3,13 +3,13 @@
 
 $admin_cdnpublic = 4;
 if($admin_cdnpublic==1){
-	$cdnpublic = '//lib.baomitu.com/';
+    $cdnpublic = 'https://cdnjs.cloudflare.com/ajax/libs/';
 }elseif($admin_cdnpublic==2){
-	$cdnpublic = 'https://s4.zstatic.net/ajax/libs/';
+    $cdnpublic = 'https://s4.zstatic.net/ajax/libs/';
 }elseif($admin_cdnpublic==4){
-	$cdnpublic = '//lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/';
+    $cdnpublic = 'https://lib.baomitu.com/';
 }else{
-	$cdnpublic = '//mirrors.sustech.edu.cn/cdnjs/ajax/libs/';
+    $cdnpublic = 'https://unpkg.com/';
 }
 ?>
 <!DOCTYPE html>

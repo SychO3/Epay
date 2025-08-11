@@ -91,13 +91,13 @@ if (!file_exists(ROOT.'install/install.lock') && file_exists(ROOT.'install/index
 }
 
 if($conf['cdnpublic']==1){
-	$cdnpublic = '//lib.baomitu.com/';
+    $cdnpublic = 'https://cdnjs.cloudflare.com/ajax/libs/';
 }elseif($conf['cdnpublic']==2){
-	$cdnpublic = 'https://s4.zstatic.net/ajax/libs/';
+    $cdnpublic = 'https://s4.zstatic.net/ajax/libs/';
 }elseif($conf['cdnpublic']==4){
-	$cdnpublic = '//lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/';
+    $cdnpublic = 'https://lib.baomitu.com/';
 }else{
-	$cdnpublic = '//mirrors.sustech.edu.cn/cdnjs/ajax/libs/';
+    $cdnpublic = 'https://unpkg.com/';
 }
 
 if(empty($conf['public_key'])){
